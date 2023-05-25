@@ -21,6 +21,7 @@ body {
 
 .header {
     margin-top: 60px;
+    margin-bottom: 70px;
 
     &__container {
         display: flex;
@@ -44,13 +45,12 @@ body {
 
     &__item {
         margin-right: 40px;
-        transition: 0.2s;
 
         &:hover {
 
             .menu__link {
 
-                &:after  {
+                &:after {
                     width: 100%;
                 }
             }
@@ -64,14 +64,15 @@ body {
             border: 1px solid #191A23;
             border-radius: 14px;
             padding: 20px 35px;
+            transition: background-color 0.2s;
 
             &:hover {
                 background-color: #000;
-            
+
                 .menu__link {
                     color: #fff;
-    
-                    &:after  {
+
+                    &:after {
                         width: 0;
                     }
                 }
@@ -85,7 +86,7 @@ body {
         text-decoration: none;
         font-size: 20px;
         line-height: 1.4;
-        transition: 0.2s;
+        transition: color 0.2s;
 
         &:after {
             content: '';
@@ -95,8 +96,60 @@ body {
             width: 0;
             height: 2px;
             background-color: #000;
-            transition: 0.2s;
+            transition: width 0.2s;
             transform: translateX(-50%);
         }
+    }
+}
+
+.hero {
+    min-height: calc(100vh - 200px);
+    margin-bottom: 70px;
+
+    &__wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &__text {
+        margin-right: 50px;
+        width: 530px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 1.28;
+        margin-bottom: 35px;
+    }
+
+    &__description {
+        font-size: 20px;
+        line-height: 1.4;
+        margin-bottom: 35px;
+    }
+
+    &__link {
+        display: inline-block;
+        color: #fff;
+        background-color: #191a23;
+        padding: 20px 35px;
+        border: 1px solid #191a23;
+        border-radius: 14px;
+        font-size: 20px;
+        line-height: 1.4;
+        text-decoration: none;
+        transition-property: background-color, color;
+        transition-duration: 0.2s;
+
+        &:hover {
+            background-color: transparent;
+            color: #000;
+        }
+    }
+
+    &__image {
+        height: 100%;
     }
 }
