@@ -23,7 +23,7 @@ body {
   margin-top: 60px;
   margin-bottom: 70px;
 }
-.header__container {
+.header__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -125,4 +125,26 @@ body {
 }
 .hero__image {
   height: 100%;
+}
+
+.companies {
+  margin-bottom: 140px;
+}
+.companies__title {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.companies__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.companies__company-image {
+  height: 48px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }

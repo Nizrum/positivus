@@ -23,7 +23,7 @@ body {
     margin-top: 60px;
     margin-bottom: 70px;
 
-    &__container {
+    &__wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -151,5 +151,30 @@ body {
 
     &__image {
         height: 100%;
+    }
+}
+
+.companies {
+    margin-bottom: 140px;
+
+    &__title {
+        position: absolute;
+        left: -10000px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__company-image {
+        height: 48px;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
     }
 }
