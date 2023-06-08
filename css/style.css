@@ -205,6 +205,12 @@ body {
   background-repeat: no-repeat;
   background-size: 210px;
   background-position: 340px center;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.service:hover {
+  box-shadow: none;
+  transform: translateY(5px);
 }
 .service:nth-child(1) {
   background-image: url(../images/illustration-1.png);
@@ -246,9 +252,6 @@ body {
   align-items: center;
   text-decoration: none;
 }
-.service__link:hover .service__link-text:after {
-  width: 100%;
-}
 .service__link_white .service__link-icon circle {
   fill: #fff;
 }
@@ -258,27 +261,13 @@ body {
 .service__link_white .service__link-text {
   color: #fff;
 }
-.service__link_white .service__link-text:after {
-  background-color: #fff;
-}
 .service__link-icon {
   width: 41px;
   height: 41px;
   margin-right: 15px;
 }
 .service__link-text {
-  position: relative;
   font-size: 20px;
   line-height: 1.4;
   color: #000;
-}
-.service__link-text:after {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #000;
-  transition: width 0.2s;
 }
