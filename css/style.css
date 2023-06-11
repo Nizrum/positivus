@@ -395,3 +395,118 @@ body {
   background-color: #B9FF66;
   transition: width 0.2s;
 }
+
+.working-process {
+  margin-bottom: 140px;
+}
+.working-process__text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.working-process__title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.3;
+  padding: 0 7px;
+  background: #B9FF66;
+  border-radius: 7px;
+  margin-right: 40px;
+}
+.working-process__description {
+  width: 580px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+}
+.working-process__tab {
+  margin-bottom: 30px;
+}
+.working-process__tab:last-child {
+  margin-bottom: 0;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 60px 40px;
+  background-color: #f3f3f3;
+  border-radius: 45px;
+  border: 1px solid #191A23;
+  box-shadow: 0px 5px 0px #191A23;
+  transition: all 0.2s;
+}
+.tab__number {
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 1.3;
+  margin-right: 25px;
+}
+.tab__title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.3;
+  margin-right: auto;
+}
+.tab__text {
+  position: relative;
+  display: none;
+  width: 100%;
+  font-size: 18px;
+  line-height: 1.3;
+  margin-top: 60px;
+}
+.tab__text:before {
+  content: "";
+  position: absolute;
+  display: none;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  border-radius: 1px;
+}
+.tab_opened {
+  background-color: #b9ff66;
+}
+.tab_opened .tab__text {
+  display: block;
+}
+.tab_opened .tab__text:before {
+  display: block;
+}
+
+.open-button {
+  position: relative;
+  cursor: pointer;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background-color: #f3f3f3;
+  border: 1px solid #191A23;
+}
+.open-button__line {
+  width: 25px;
+  height: 6px;
+  background-color: #000;
+}
+.open-button__line:first-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.open-button__line:last-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  transition: all 0.2s;
+}
+.open-button_opened .open-button__line:last-child {
+  width: 0;
+}
