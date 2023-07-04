@@ -1255,6 +1255,18 @@ body {
         width: 1100px;
     }
 
+    .hero {
+
+        &__text {
+            margin-right: 40px;
+        }
+
+        &__image {
+            height: auto;
+            width: 50%;
+        }
+    }
+
     .services {
 
         &__list {
@@ -1294,5 +1306,202 @@ body {
 
     .form {
         background-position: 180% 50%;
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .container {
+        width: 900px;
+    }
+
+    .header {
+        margin-bottom: 60px;
+
+        &__logo {
+            width: 170px;
+        }
+    }
+
+    .menu {
+
+        &__item {
+            margin-right: 30px;
+
+            &_outlined {
+                padding: 15px 25px;
+            }
+        }
+
+        &__link {
+            font-size: 18px;
+        }
+    }
+
+    .hero {
+        min-height: calc(100vh - 345.2px);
+        margin-bottom: 60px;
+
+        &__text {
+            width: auto;
+        }
+
+        &__title {
+            font-size: 48px;
+            margin-bottom: 30px;
+        }
+
+        &__description {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .companies {
+        margin-bottom: 120px;
+
+        &__company-image {
+            height: 40px;
+        }
+    }
+
+    .services {
+        margin-bottom: 120px;
+
+        &__text {
+            margin-bottom: 60px;
+        }
+    }
+
+    .service {
+        width: 435px;
+        height: 280px;
+        background-size: 150px;
+        background-position: 265px center;
+
+        &__title {
+            font-size: 27px;
+        }
+    }
+
+    .message {
+        margin-bottom: 120px;
+
+        &__wrapper {
+            padding: 50px;
+        }
+
+        &__image {
+            width: 340px;
+            top: -10px;
+            right: 10px;
+        }
+    }
+
+    .cases {
+        margin-bottom: 120px;
+
+        &__text {
+            margin-bottom: 60px;
+        }
+
+        &__list {
+            padding: 50px;
+        }
+    }
+
+    .case {
+        width: 220px;
+
+        &:after {
+            right: -35px;
+        }
+    }
+
+    .working-process {
+        margin-bottom: 120px;
+
+        &__text {
+            margin-bottom: 60px;
+        }
+    }
+
+    .team {
+        margin-bottom: 120px;
+
+        &__text {
+            margin-bottom: 60px;
+        }
+    }
+
+    .person {
+        width: 48%;
+    }
+
+    .testimonials {
+        margin-bottom: 120px;
+
+        &__text {
+            margin-bottom: 60px;
+        }
+    }
+
+    .slider {
+
+        &__wrapper {
+            margin-bottom: 90px;
+        }
+    }
+
+    .contact {
+        margin-bottom: 120px;
+
+        &__text {
+            margin-bottom: 60px;
+        }
+    }
+
+    .form {
+        padding-right: 40%;
+        background-size: 560px 520px;
+        background-position: 180% 50%;
+    }
+
+    .footer {
+
+        &__top {
+            margin-bottom: 60px;
+        }
+
+        &__logo {
+            width: 150px;
+        }
+
+        &__social-link {
+            margin-right: 15px;
+        }
+    }
+
+    .footer-menu {
+
+        &__item {
+            margin-right: 25px;
+        }
+    }
+
+    .subscription-form {
+        width: 50%;
+        flex-wrap: wrap;
+        padding: 40px;
+
+        &__input {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+
+        &__button {
+            width: 100%;
+        }
     }
 }

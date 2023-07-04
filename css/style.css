@@ -1046,6 +1046,13 @@ body {
   .container {
     width: 1100px;
   }
+  .hero__text {
+    margin-right: 40px;
+  }
+  .hero__image {
+    height: auto;
+    width: 50%;
+  }
   .services__list {
     margin: 0px -15px;
   }
@@ -1072,5 +1079,147 @@ body {
   }
   .form {
     background-position: 180% 50%;
+  }
+}
+@media (max-width: 1199px) {
+  .container {
+    width: 900px;
+  }
+  .header {
+    margin-bottom: 60px;
+  }
+  .header__logo {
+    width: 170px;
+  }
+  .menu__item {
+    margin-right: 30px;
+  }
+  .menu__item_outlined {
+    padding: 15px 25px;
+  }
+  .menu__link {
+    font-size: 18px;
+  }
+  .hero {
+    min-height: calc(100vh - 345.2px);
+    margin-bottom: 60px;
+  }
+  .hero__text {
+    width: auto;
+  }
+  .hero__title {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+  .hero__description {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .companies {
+    margin-bottom: 120px;
+  }
+  .companies__company-image {
+    height: 40px;
+  }
+  .services {
+    margin-bottom: 120px;
+  }
+  .services__text {
+    margin-bottom: 60px;
+  }
+  .service {
+    width: 435px;
+    height: 280px;
+    background-size: 150px;
+    background-position: 265px center;
+  }
+  .service__title {
+    font-size: 27px;
+  }
+  .message {
+    margin-bottom: 120px;
+  }
+  .message__wrapper {
+    padding: 50px;
+  }
+  .message__image {
+    width: 340px;
+    top: -10px;
+    right: 10px;
+  }
+  .cases {
+    margin-bottom: 120px;
+  }
+  .cases__text {
+    margin-bottom: 60px;
+  }
+  .cases__list {
+    padding: 50px;
+  }
+  .case {
+    width: 220px;
+  }
+  .case:after {
+    right: -35px;
+  }
+  .working-process {
+    margin-bottom: 120px;
+  }
+  .working-process__text {
+    margin-bottom: 60px;
+  }
+  .team {
+    margin-bottom: 120px;
+  }
+  .team__text {
+    margin-bottom: 60px;
+  }
+  .person {
+    width: 48%;
+  }
+  .testimonials {
+    margin-bottom: 120px;
+  }
+  .testimonials__text {
+    margin-bottom: 60px;
+  }
+  .slider__wrapper {
+    margin-bottom: 90px;
+  }
+  .contact {
+    margin-bottom: 120px;
+  }
+  .contact__text {
+    margin-bottom: 60px;
+  }
+  .form {
+    padding-right: 40%;
+    background-size: 560px 520px;
+    background-position: 180% 50%;
+  }
+  .footer__top {
+    margin-bottom: 60px;
+  }
+  .footer__logo {
+    width: 150px;
+  }
+  .footer__social-link {
+    margin-right: 15px;
+  }
+  .footer-menu__item {
+    margin-right: 25px;
+  }
+  .subscription-form {
+    width: 50%;
+    flex-wrap: wrap;
+    padding: 40px;
+  }
+  .subscription-form__input {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .subscription-form__button {
+    width: 100%;
   }
 }
