@@ -32,6 +32,24 @@ body {
     &__logo {
         width: 220px;
     }
+
+    &__mobile-menu-button {
+        position: fixed;
+        z-index: 10;
+        top: 57px;
+        right: calc((100% - 700px) / 2);
+        background-color: transparent;
+        cursor: pointer;
+        display: none;
+        background-color: #fff;
+        padding: 5px;
+        border-radius: 3px;
+
+        svg {
+            width: 40px;
+            height: 32px;
+        }
+    }
 }
 
 .menu {
@@ -1503,5 +1521,240 @@ body {
         &__button {
             width: 100%;
         }
+    }
+}
+
+@media (max-width: 991px) {
+
+    .container {
+        width: 700px;
+    }
+
+    .header {
+
+        &__mobile-menu-button {
+            display: block;
+        }
+    }
+
+    .menu {
+        position: fixed;
+        z-index: 10;
+        right: calc((100% - 700px) / 2);
+        top: 130px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 14px;
+        transform: scaleY(0);
+        transition: all 0.2s;
+
+        &__list {
+            flex-direction: column;
+        }
+
+        &__item {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+        &_opened {
+            transform: scaleY(1);
+        }
+    }
+
+    .hero {
+
+        &__title {
+            font-size: 40px;
+        }
+
+        &__image {
+            width: 42%;
+        }
+    }
+
+    .companies {
+
+        &__company-image {
+            height: 32px;
+        }
+    }
+
+    .services {
+
+        &__title {
+            font-size: 36px;
+        }
+
+        &__description {
+            width: auto;
+        }
+    }
+
+    .service {
+        width: 335px;
+        padding: 40px;
+        background-size: 140px;
+        background-position: 78% 78%;
+
+        &__title {
+            font-size: 24px;
+        }
+
+        &__link-icon {
+            margin: 0;
+        }
+
+        &__link-text {
+            display: none;
+        }
+    }
+
+    .message {
+
+        &__text {
+            width: 380px;
+        }
+
+        &__title {
+            font-size: 24px;
+        }
+
+        &__image {
+            width: 200px;
+            top: 50px;
+            right: 25px;
+        }
+    }
+
+    .cases {
+
+        &__title {
+            font-size: 36px;
+            white-space: nowrap;
+        }
+
+        &__description {
+            width: auto;
+        }
+
+        &__list {
+            background-color: transparent;
+            padding: 0;
+            border-radius: 0;
+            overflow-x: scroll;
+        }
+
+        &__case {
+            margin-right: 30px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .case {
+        flex-shrink: 0;
+        width: 300px;
+        background-color: #191A23;
+        padding: 40px;
+        border-radius: 45px;
+
+        &:after {
+            display: none;
+        }
+    }
+
+    .working-process {
+
+        &__title {
+            font-size: 36px;
+            white-space: nowrap;
+        }
+
+        &__description {
+            width: 100%;
+        }
+    }
+
+    .tab {
+        padding: 50px 40px;
+
+        &__number {
+            font-size: 48px;
+        }
+
+        &__title {
+            font-size: 24px;
+        }
+    }
+
+    .team {
+
+        &__title {
+            font-size: 36px;
+        }
+
+        &__description {
+            width: auto;
+        }
+    }
+
+    .person {
+        padding-top: 65px;
+
+        &__image {
+            height: 80px;
+        }
+
+        &__link {
+            top: 35px;
+        }
+    }
+
+    .testimonials {
+
+        &__title {
+            font-size: 36px;
+        }
+
+        &__description {
+            width: auto;
+        }
+    }
+
+    .slider {
+        padding: 70px;
+    }
+
+    .contact {
+
+        &__title {
+            font-size: 36px;
+            white-space: nowrap;
+        }
+
+        &__description {
+            width: auto;
+        }
+    }
+
+    .form {
+        padding: 60px 40% 60px 60px;
+        background-size: 500px 470px;
+        background-position: 220% 50%;
+    }
+
+    .footer-menu {
+        display: none;
+    }
+
+    .address {
+        width: 47%;
+    }
+
+    .subscription-form {
+        width: 47%;
     }
 }
