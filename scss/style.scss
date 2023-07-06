@@ -1843,6 +1843,7 @@ body {
             flex-wrap: nowrap;
             overflow-x: scroll;
             padding-bottom: 20px;
+            margin: 0;
         }
 
         &__service {
@@ -2016,7 +2017,7 @@ body {
     }
 
     .footer {
-        
+
         &__wrapper {
             padding: 50px;
         }
@@ -2051,4 +2052,152 @@ body {
     }
 }
 
-// Закоммитить, а потом уже делать дальше
+@media (max-width: 575px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .header {
+        margin: 40px 0px;
+
+        &__mobile-menu-button {
+            right: 5%;
+            top: 37px;
+        }
+    }
+
+    .menu {
+        right: 5%;
+        top: 110px;
+    }
+
+    .hero {
+
+        &__title {
+            font-size: 36px;
+        }
+    }
+
+    .companies {
+        margin-bottom: 80px;
+
+        &__company-image {
+            height: 42px;
+
+            &:nth-child(3) {
+                margin-right: 30px;
+            }
+
+            &:nth-child(4) {
+                margin-left: 30px;
+            }
+        }
+    }
+
+    .services {
+        margin-bottom: 80px;
+
+        &__text {
+            margin-bottom: 40px;
+        }
+
+        &__title {
+            font-size: 32px;
+        }
+    }
+
+    .message {
+        margin-bottom: 80px;
+
+        &__text {
+            width: auto;
+        }
+    }
+
+    .cases {
+        margin-bottom: 80px;
+
+        &__text {
+            margin-bottom: 40px;
+        }
+
+        &__title {
+            font-size: 32px;
+        }
+    }
+
+    .working-process {
+        margin-bottom: 80px;
+
+        &__text {
+            margin-bottom: 40px;
+        }
+
+        &__title {
+            font-size: 32px;
+        }
+    }
+
+    .team {
+        margin-bottom: 80px;
+
+        &__text {
+            margin-bottom: 40px;
+        }
+
+        &__title {
+            font-size: 32px;
+        }
+    }
+
+    .testimonials {
+        margin-bottom: 80px;
+
+        &__text {
+            margin-bottom: 40px;
+        }
+
+        &__title {
+            font-size: 32px;
+        }
+    }
+
+    .slider {
+        padding: 40px;
+
+        &__wrapper {
+            margin-bottom: 50px;
+        }
+    }
+
+    .review {
+
+        &__text {
+            padding: 40px;
+        }
+    }
+
+    .contact {
+        margin-bottom: 80px;
+
+        &__text {
+            margin-bottom: 40px;
+        }
+
+        &__title {
+            font-size: 32px;
+        }
+    }
+
+    .form {
+        padding: 40px;
+    }
+
+    .footer {
+
+        &__wrapper {
+            padding: 40px;
+        }
+    }
+}
