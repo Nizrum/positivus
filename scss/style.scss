@@ -2201,3 +2201,287 @@ body {
         }
     }
 }
+
+@media (max-width: 479px) {
+
+    .header {
+        margin: 25px 0px 35px;
+
+        &__mobile-menu-button {
+            top: 22px;
+        }
+    }
+
+    .menu {
+        top: 95px;
+    }
+
+    .hero {
+
+        &__title {
+            font-size: 32px;
+        }
+    }
+
+    .companies {
+        margin-bottom: 70px;
+
+        &__wrapper {
+            justify-content: space-around;
+        }
+
+        &__company-image {
+            height: auto;
+            width: 100px;
+            margin-right: 7px;
+            margin-left: 7px;
+
+            &:nth-child(3) {
+                margin-right: 7px;
+            }
+
+            &:nth-child(4) {
+                margin-left: 7px;
+            }
+        }
+    }
+
+    .services {
+        margin-bottom: 70px;
+
+        &__title {
+            font-size: 28px;
+        }
+
+        &__text {
+            margin-bottom: 35px;
+        }
+    }
+
+    .service {
+        width: 90%;
+        height: 250px;
+        padding: 30px;
+        background-position: 78% 83%;
+        background-size: 130px;
+        border-radius: 30px;
+
+        &__title {
+            font-size: 22px;
+        }
+    }
+
+    .message {
+        
+        &__wrapper {
+            padding: 35px;
+            border-radius: 30px;
+        }
+
+        &__link {
+            text-align: center;
+        }
+    }
+
+    .cases {
+        margin-bottom: 70px;
+
+        &__title {
+            font-size: 28px;
+        }
+
+        &__text {
+            margin-bottom: 35px;
+        }
+
+        &__list {
+            align-items: stretch;
+            padding-bottom: 15px;
+        }
+
+        &__case {
+            margin-right: 20px;
+        }
+    }
+
+    .case {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding: 30px;
+        border-radius: 30px;
+
+        &__link {
+            margin-top: auto;
+        }
+    }
+
+    .working-process {
+        margin-bottom: 70px;
+
+        &__title {
+            font-size: 28px;
+        }
+
+        &__text {
+            margin-bottom: 35px;
+        }
+    }
+
+    .tab {
+        padding: 25px;
+        border-radius: 30px;
+
+        &__number {
+            font-size: 32px;
+            margin-right: 20px;
+        }
+
+        &__title {
+            font-size: 18px;
+            width: 50%;
+        }
+
+        &__button {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .open-button {
+
+        &__line {
+            width: 20px;
+            height: 5px;
+        }
+    }
+
+    .team {
+        margin-bottom: 70px;
+
+        &__title {
+            font-size: 28px;
+        }
+
+        &__text {
+            margin-bottom: 35px;
+        }
+    }
+
+    .person {
+        width: 90%;
+        padding: 30px;
+        padding-top: 90px;
+        border-radius: 30px;
+
+        &__top {
+            align-items: flex-start;
+        }
+
+        &__image {
+            height: 60px;
+        }
+
+        &__name {
+            font-size: 18px;
+        }
+    }
+
+    .testimonials {
+        margin-bottom: 70px;
+
+        &__title {
+            font-size: 28px;
+        }
+
+        &__text {
+            margin-bottom: 35px;
+        }
+    }
+
+    .slider {
+        padding: 25px;
+        border-radius: 30px;
+
+        &__wrapper {
+            margin-bottom: 40px;
+        }
+    }
+
+    .review {
+
+        &__text {
+            padding: 25px;
+            border-radius: 22px;
+        }
+
+        &__message-arrow {
+            left: 25px;
+        }
+
+        &__author {
+            margin-left: 56px;
+            font-size: 18px;
+        }
+
+        &__author-status {
+            margin-left: 56px;
+        }
+    }
+
+    .contact {
+        margin-bottom: 70px;
+
+        &__title {
+            font-size: 28px;
+        }
+
+        &__text {
+            margin-bottom: 35px;
+        }
+    }
+
+    .form {
+        padding: 30px;
+        border-radius: 30px;
+
+        &__radio-buttons {
+            flex-direction: column;
+        }
+
+        &__radio-label {
+
+            &:first-child {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .footer {
+
+        &__wrapper {
+            padding: 30px;
+        }
+
+        &__home-link {
+            width: 50%;
+        }
+
+        &__logo {
+            width: 100%;
+        }
+    }
+
+    .subscription-form {
+        padding: 25px;
+
+        &__input {
+            margin-bottom: 20px;
+        }
+
+        &__button {
+            padding: 20px;
+        }
+    }
+}
