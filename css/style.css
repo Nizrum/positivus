@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #000;
   font-family: "Space Grotesk", sans-serif;
@@ -34,11 +38,10 @@ body {
 .header__mobile-menu-button {
   position: fixed;
   z-index: 10;
-  top: 57px;
-  right: calc((100% - 700px) / 2);
+  top: 65px;
+  right: calc(50% - 620px);
   background-color: transparent;
   cursor: pointer;
-  display: none;
   background-color: #fff;
   padding: 5px;
   border-radius: 3px;
@@ -48,43 +51,38 @@ body {
   height: 32px;
 }
 
+.menu {
+  position: fixed;
+  z-index: 20;
+  right: calc(50% - 620px);
+  top: 130px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  transform: scaleY(0);
+  transition: all 0.2s;
+}
 .menu__list {
+  flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: space-between;
   list-style: none;
 }
 .menu__item {
-  margin-right: 40px;
-}
-.menu__item:hover .menu__link:after {
-  width: 100%;
+  margin-bottom: 20px;
 }
 .menu__item:last-child {
-  margin-right: 0;
-}
-.menu__item_outlined {
-  border: 1px solid #191A23;
-  border-radius: 14px;
-  padding: 20px 35px;
-  transition: background-color 0.2s;
-}
-.menu__item_outlined:hover {
-  background-color: #000;
-}
-.menu__item_outlined:hover .menu__link {
-  color: #fff;
-}
-.menu__item_outlined:hover .menu__link:after {
-  width: 0;
+  margin: 0;
 }
 .menu__link {
+  display: block;
   position: relative;
   color: #000;
   text-decoration: none;
   font-size: 20px;
   line-height: 1.4;
-  transition: color 0.2s;
+  transition: all 0.2s;
 }
 .menu__link:after {
   content: "";
@@ -96,6 +94,24 @@ body {
   background-color: #000;
   transition: width 0.2s;
   transform: translateX(-50%);
+}
+.menu__link:hover:after {
+  width: 100%;
+}
+.menu__link_outlined {
+  border: 1px solid #191A23;
+  border-radius: 14px;
+  padding: 20px 35px;
+}
+.menu__link_outlined:hover {
+  background-color: #000;
+  color: #fff;
+}
+.menu__link_outlined:hover:after {
+  width: 0;
+}
+.menu_opened {
+  transform: scaleY(1);
 }
 
 .hero {
@@ -1065,6 +1081,12 @@ body {
   .container {
     width: 1100px;
   }
+  .header__mobile-menu-button {
+    right: calc(50% - 550px);
+  }
+  .menu {
+    right: calc(50% - 550px);
+  }
   .hero__text {
     margin-right: 40px;
   }
@@ -1105,16 +1127,19 @@ body {
     width: 900px;
   }
   .header {
+    margin-top: 25px;
     margin-bottom: 60px;
   }
   .header__logo {
     width: 170px;
   }
-  .menu__item {
-    margin-right: 30px;
+  .header__mobile-menu-button {
+    top: 24px;
+    right: calc(50% - 450px);
   }
-  .menu__item_outlined {
-    padding: 15px 25px;
+  .menu {
+    top: 95px;
+    right: calc(50% - 450px);
   }
   .menu__link {
     font-size: 18px;
@@ -1247,28 +1272,13 @@ body {
     width: 700px;
   }
   .header__mobile-menu-button {
-    display: block;
+    right: calc(50% - 350px);
   }
   .menu {
-    position: fixed;
-    z-index: 10;
-    right: calc((100% - 700px) / 2);
-    top: 130px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 14px;
-    transform: scaleY(0);
-    transition: all 0.2s;
+    right: calc(50% - 350px);
   }
-  .menu__list {
-    flex-direction: column;
-  }
-  .menu__item {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-  .menu_opened {
-    transform: scaleY(1);
+  .hero {
+    min-height: 0;
   }
   .hero__title {
     font-size: 40px;
@@ -1407,15 +1417,16 @@ body {
     width: 500px;
   }
   .header {
-    margin: 50px 0;
+    margin-bottom: 50px;
   }
   .header__mobile-menu-button {
-    top: 47px;
     right: calc(50% - 250px);
   }
   .menu {
-    top: 120px;
     right: calc(50% - 250px);
+  }
+  .hero {
+    min-height: 0;
   }
   .hero__text {
     margin-right: 0;
@@ -1627,15 +1638,13 @@ body {
     width: 90%;
   }
   .header {
-    margin: 40px 0px;
+    margin-bottom: 40px;
   }
   .header__mobile-menu-button {
     right: 5%;
-    top: 37px;
   }
   .menu {
     right: 5%;
-    top: 110px;
   }
   .hero__title {
     font-size: 36px;
@@ -1730,13 +1739,7 @@ body {
 }
 @media (max-width: 479px) {
   .header {
-    margin: 25px 0px 35px;
-  }
-  .header__mobile-menu-button {
-    top: 22px;
-  }
-  .menu {
-    top: 95px;
+    margin-bottom: 35px;
   }
   .hero__title {
     font-size: 32px;
